@@ -1,7 +1,16 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import {useAuthState} from 'react-firebase-hooks/auth'
+import auth from '../../firebase.init'
+import { signOut } from 'firebase/auth';
 const Navbar = () => {
-    return (
+  const [user] = useAuthState(auth);
+
+  const logout=()=>{
+    signOut(auth)
+  }
+
+    return (  
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -26,14 +35,14 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a href="/menu">Menu</a>
               </li>
-             
+
               <li>
-                <a>Item 3</a>
+                <a href="/about">About</a>
               </li>
             </ul>
           </div>
@@ -42,19 +51,19 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a>Item 1</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a href="/menu">Menu</a>
             </li>
-            
+
             <li>
-              <a>Item 3</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <p>{user ? <button className='btn btn-ghost' onClick={logout}>Sign Out</button>:<Link to='/login'>Login</Link>}</p>
         </div>
       </div>
     );

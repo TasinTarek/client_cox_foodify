@@ -1,0 +1,66 @@
+
+    [
+  {
+    "_id": "636a153580862597e10c659c",
+    "picture": "http://placehold.it/32x32",
+    "name": "Rasmussen Knowles",
+    "slots":["08.00 AM - 11.00 AM",
+        "12.00 PM - 04.00 PM",
+        "06.00 PM - 11.59 PM"],
+        "price": 300
+    
+  },
+  {
+    "_id": "636a1535477f3f82c00632be",
+    "picture": "http://placehold.it/32x32",
+    "name": "Levine Underwood",
+    "slots":[
+        
+    ],
+    "price": 300
+  },
+  {
+    "_id": "636a1535f5430f98cb352ea4",
+    "picture": "http://placehold.it/32x32",
+    "name": "Alba Henry",
+    "slots":[
+        "08.00 AM - 11.00 AM",
+        "12.00 PM - 04.00 PM",
+        "06.00 PM - 11.59 PM"
+    ],
+    "price": 500
+  },
+  {
+    "_id": "636a1535d10820f780f0d42a",
+    "picture": "http://placehold.it/32x32",
+    "name": "Faulkner Foreman",
+    "slots":[
+        "08.00 AM - 11.00 AM",
+        "12.00 PM - 04.00 PM",
+        "06.00 PM - 11.59 PM"
+    ],
+    "price": 800
+  },
+  {
+    "_id": "636a1535b2d70e341c2387c8",
+    "picture": "http://placehold.it/32x32",
+    "name": "Doyle Cooley",
+    "slots":[
+        "08.00 AM - 11.00 AM",
+        "12.00 PM - 04.00 PM",
+        "06.00 PM - 11.59 PM"
+    ],
+    "price": 1200
+  },
+  {
+    "_id": "636a1535f388197617cbdceb",
+    "picture": "http://placehold.it/32x32",
+    "name": "Zimmerman Thornton",
+    "slots":[
+        "08.00 AM - 11.00 AM",
+        "12.00 PM - 04.00 PM",
+        "06.00 PM - 11.59 PM"
+    ],
+    "price": 2000
+  }
+]
